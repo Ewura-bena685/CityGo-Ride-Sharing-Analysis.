@@ -183,7 +183,7 @@ top5_drivers.columns = ["driver_id", "trips"]
 # SIDEBAR
 # ─────────────────────────────────────────────
 with st.sidebar:
-    st.markdown("## 🚖 CityGo Analytics")
+    st.markdown("##  CityGo Analytics")
     st.markdown("*Internal BI Dashboard — v1.0*")
     st.markdown("---")
 
