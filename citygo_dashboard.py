@@ -408,7 +408,7 @@ r3["total_spend ($)"] = r3["rider_id"].apply(
     lambda rid: fdf[fdf["rider_id"] == rid]["trip_fare"].sum()
 ).round(2)
 r3["voucher_value ($)"] = (r3["total_spend ($)"] * 0.20).round(2)
-r3.index = ["🥇 1st", "🥈 2nd", "🥉 3rd"]
+r3.index = [" 1st", "2nd", " 3rd"]
 r3["rider_id"] = "Rider " + r3["rider_id"].astype(str)
 st.dataframe(r3.rename(columns={"rider_id": "Rider"}), use_container_width=True)
 
